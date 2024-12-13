@@ -1,0 +1,19 @@
+.search-container {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: white;
+}
+
+mat-form-field {
+    width: 100%;
+}
+
+.search-type {
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 600px) {
+    .search-container {
+        padding: 0.5rem;
+    }
+}

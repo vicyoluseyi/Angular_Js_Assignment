@@ -1,0 +1,15 @@
+<div class="search-container">
+  <div class="search-type">
+    <mat-button-toggle-group [formControl]="searchByControl">
+      <mat-button-toggle value="name">Name</mat-button-toggle>
+      <mat-button-toggle value="email">Email</mat-button-toggle>
+      <mat-button-toggle value="phone">Phone</mat-button-toggle>
+    </mat-button-toggle-group>
+  </div>
+
+  <mat-form-field>
+    <mat-label>Search</mat-label>
+    <input matInput [formControl]="searchControl">
+    <mat-icon matSuffix>search</mat-icon>
+  </mat-form-field>
+</div>

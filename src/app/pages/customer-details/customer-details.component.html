@@ -1,0 +1,24 @@
+<div class="details-container">
+  <div *ngIf="customer">
+    <h2>{{customer.name}}</h2>
+
+    <div class="info-section">
+      <h3>Contact Information</h3>
+      <p><strong>Email:</strong> {{customer.email}}</p>
+      <p><strong>Phone:</strong> {{customer.phone}}</p>
+    </div>
+
+    <div class="info-section">
+      <h3>Company</h3>
+      <p><strong>Name:</strong> {{customer.company.name}}</p>
+      <p><strong>Business:</strong> {{customer.company.bs}}</p>
+    </div>
+
+    <div class="actions">
+      <button mat-button (click)="onEdit()">Edit</button>
+      <button mat-button color="warn" (click)="onDelete()">Delete</button>
+    </div>
+  </div>
+
+  <mat-spinner *ngIf="loading" class="loading-spinner"></mat-spinner>
+</div>
